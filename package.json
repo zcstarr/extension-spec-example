@@ -1,0 +1,16 @@
+{
+  "name": "extension-spec-example",
+  "version": "1.0.0",
+  "description": "Example extension spec for error groups",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/test-schema.ts"
+  },
+  "dependencies": {
+    "@open-rpc/meta-schema": "^1.14.2",
+    "@open-rpc/specification-extension-spec": "^1.0.2",
+    "ext-schema-utils-js-proto": "^0.0.0-development",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}

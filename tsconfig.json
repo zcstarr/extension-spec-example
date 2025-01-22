@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target":"ES5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["ES2020"],
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowArbitraryExtensions": true,
+    "strict": true
+  },
+  "include": ["src/**/*.ts", "src/test-schema.ats"],
+  "exclude": ["node_modules"]
+} 
