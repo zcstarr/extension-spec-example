@@ -9,7 +9,7 @@
   "dependencies": {
     "@open-rpc/meta-schema": "^1.14.2",
     "@open-rpc/specification-extension-spec": "^1.0.2",
-    "ext-schema-utils-js-proto": "^0.0.0-development",
+    "@open-rpc/schema-utils-js": "2.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.0.0"
   }

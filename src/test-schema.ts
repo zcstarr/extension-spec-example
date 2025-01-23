@@ -1,11 +1,16 @@
 import { OpenrpcDocument } from "@open-rpc/meta-schema";
-import { dereferenceDocument, validateOpenRPCDocument } from "ext-schema-utils-js-proto";
-import errorGroupSupportedDocument from "./error-groups-schema.json"
+import {
+  dereferenceDocument,
+  validateOpenRPCDocument,
+} from "@open-rpc/schema-utils-js";
+import errorGroupSupportedDocument from "./error-groups-schema.json";
 
-async function testSchema(){
-  const dereffed = await dereferenceDocument(errorGroupSupportedDocument as OpenrpcDocument);
+async function testSchema() {
+  const dereffed = await dereferenceDocument(
+    errorGroupSupportedDocument as OpenrpcDocument
+  );
   // Run validation
-  console.log(JSON.stringify(dereffed, null, 2))
+  console.log(JSON.stringify(dereffed, null, 2));
   const result = validateOpenRPCDocument(dereffed as OpenrpcDocument);
 
   // Pretty print results
@@ -14,6 +19,6 @@ async function testSchema(){
   } else {
     console.log("❌ Schema validation failed:");
     console.log(result.message);
-  } 
+  }
 }
-testSchema()
+testSchema();
